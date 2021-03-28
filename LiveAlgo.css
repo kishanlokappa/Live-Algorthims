@@ -95,6 +95,7 @@ header {
   background: #f8f8f8;
   padding: 2em 0;
   text-align: center;
+  margin-bottom: 3em;
 }
 
 @media (min-width: 675px) {
@@ -174,4 +175,19 @@ nav a:focus {
 
 .article-recent-secondary {
   order: 0;
+}
+
+@media (min-width: 675px) {
+  .article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article-recent-secondary {
+    width: 30%;
+  }
+
+  .article-recent-main {
+    width: 68%;
+  }
 }
