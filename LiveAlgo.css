@@ -75,6 +75,16 @@ h1 {
   color: #143774;
 }
 
+.widget-title,
+.widget-recent-post-title {
+  font-size: 1rem;
+}
+
+.widget-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
 /* =================
 Layout
 ================= */
@@ -98,17 +108,26 @@ header {
   margin-bottom: 3em;
 }
 
+footer {
+  background: #143774;
+  color: white;
+  text-align: center;
+  padding: 3em 0;
+}
+
 @media (min-width: 675px) {
   .container-flex {
     flex-direction: row;
   }
 
   main {
-    width: 75%;
+    width: 70%;
   }
 
   aside {
-    width: 20%;
+    width: 23%;
+    min-width: 200px;
+    margin-left: 1em;
   }
 }
 
@@ -190,4 +209,43 @@ nav a:focus {
   .article-recent-main {
     width: 68%;
   }
+
+  .article-featured {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-image {
+    order: -2;
+    min-height: 250px;
+    object-fit: cover;
+  }
+
+  .article-info {
+    order: -1;
+  }
+}
+
+/* widget */
+
+.sidebar-widget {
+  border: 20px solid #efefef;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.widget-recent-post {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid grey;
+  margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child {
+  border: 0;
+  margin: 0;
+}
+
+.widget-image {
+  order: -2;
 }
